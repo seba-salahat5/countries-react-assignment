@@ -1,6 +1,5 @@
 {
   "name": "react-assignment",
-  "homepage" : "https://seba-salahat5.github.io/countries-react-assignment/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,6 +25,8 @@
   "scripts": {
     "build": "react-scripts build --openssl-legacy-provider",
     "start": "react-scripts start --openssl-legacy-provider",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,5 +47,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "http://seba-salahat5.github.io/countries-react-assignment"
 }
